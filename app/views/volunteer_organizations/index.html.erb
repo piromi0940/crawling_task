@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="center-title">加盟団体一覧</h1>
+
+<% @volunteer_organizations.each do |volunteer_organization| %>
+    <blockquote class="blue">
+        <p class="group_name"><%= volunteer_organization.name %></p>
+        <p class="offer"><%= link_to 'この団体の求人情報', volunteer_organization %></p>
+        <span><%= link_to 'Edit', edit_volunteer_organization_path(volunteer_organization) %></span>
+        /
+        <span><%= link_to 'Destroy', volunteer_organization, method: :delete, data: { confirm: 'この団体を消去しますか？' } %></span>
+    </blockquote>
+<% end %>
+
+<span class="btn-square-shadow"><%= link_to '新規団体を登録', new_volunteer_organization_path %></span>

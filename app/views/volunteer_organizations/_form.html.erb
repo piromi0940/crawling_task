@@ -1,0 +1,22 @@
+<%= form_with(model: volunteer_organization, local: true) do |form| %>
+  <% if volunteer_organization.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(volunteer_organization.errors.count, "error") %> prohibited this volunteer_organization from being saved:</h2>
+
+      <ul>
+      <% volunteer_organization.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: 'form-control'%>
+  </div>
+
+  <button class="actions">
+  <span class="center"><%= form.submit '新規登録' %></span>
+  </button>
+<% end %>

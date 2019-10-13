@@ -1,0 +1,72 @@
+// Place all the styles related to the ScrapeRecruitmentInfos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Place all the styles related to the RecipeScrapingForWebsite controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+blockquote {
+    position: relative;
+    padding: 0px 10px 5px 40px;
+    box-sizing: border-box;
+    font-style: italic;
+    color: #464646;
+    background: #fff4db;
+    border-top: solid 3px #ffd596;
+}
+
+blockquote:before{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 30px;
+    text-align: center;
+    content: "\f10d";
+    font-family: FontAwesome;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 900;
+}
+
+blockquote p {
+    position: relative;
+    padding: 0;
+    margin: 10px 0;
+    z-index: 3;
+    line-height: 1.7;
+}
+
+blockquote cite {
+    display: block;
+    text-align: right;
+
+    font-size: 0.9em;
+}
+
+.group_name {
+    font-weight: bolder;
+    font-family: serif;
+    font-size: 23px;
+}
+
+.btn-square-shadow {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.btn-square-shadow:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+  border-bottom: none;
+}

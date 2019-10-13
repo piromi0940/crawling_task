@@ -1,0 +1,2 @@
+module ScrapeRecruitmentInfosHelper
+end

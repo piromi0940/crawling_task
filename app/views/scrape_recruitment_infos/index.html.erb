@@ -1,0 +1,8 @@
+<% @scrape_recruitment_infos.each do |scrape_recruitment_info|%>
+    <blockquote class="orange">
+        <p class="group_name"><%= scrape_recruitment_info.title %></p>
+        <p>「<%= scrape_recruitment_info.group %>」</p>
+        <p><%= scrape_recruitment_info.content %></p>
+        <a class="job_offer" href="<%= scrape_recruitment_info.url %>">この求人の詳細へ</a>
+    </blockquote>
+<% end %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @scrape_recruitment_info.title %>
+</p>
+
+<p>
+  <strong>Group:</strong>
+  <%= @scrape_recruitment_info.group %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @scrape_recruitment_info.content %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <a href="<%= @scrape_recruitment_info.url %>"><%= @scrape_recruitment_info.url %></a>
+</p>
+
+<%= link_to 'Edit', edit_scrape_recruitment_info_path(@scrape_recruitment_info) %> |
+<%= link_to 'Back', scrape_recruitment_infos_path %>
